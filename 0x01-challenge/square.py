@@ -1,10 +1,20 @@
 #!/usr/bin/python3
 
+""" A script that computes the area and perimeter of a square
+"""
+
+
 class square():
+    """
+    A class that computes the size and area of square using the
+    dimensions of the square
+    Arguments:
+        width: the width of the square
+        height: the height of the square
+    """
 
     width = 0
     height = 0
-
 
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
@@ -19,6 +29,7 @@ class square():
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
